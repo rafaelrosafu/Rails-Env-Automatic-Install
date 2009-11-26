@@ -115,9 +115,22 @@ cd /
 rm /src/git-1.6.5.2.tar.gz
 rm -rf /src/git-1.6.5.2
 
-gem sources -a http://gemcutter.org
+echo ""
+echo "================================================================"
+echo "\tInstalling and configuring gemcutter"
+echo "================================================================"
+echo ""
 gem sources -a http://gems.github.com
+gem sources -a http://gems.rubyforge.org/
 
+gem install gemcutter
+gem tumble
+
+echo ""
+echo "================================================================"
+echo "\tInstalling Ruby on Rails"
+echo "================================================================"
+echo ""
 gem install --no-rdoc --no-ri rails
 
 echo "Do you would like install a set of gems than in my opinion is very important for a Rails development server? (y/n)"
