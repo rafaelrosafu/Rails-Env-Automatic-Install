@@ -144,6 +144,7 @@ if [ $WANTS_GEMS_PACK = "y" ]; then
 	echo "================================================================"
 	echo ""	
 
+  gem install --no-rdoc --no-ri sqlite3-ruby
 	gem install --no-rdoc --no-ri authlogic
 	gem install --no-rdoc --no-ri paperclip
 	gem install --no-rdoc --no-ri mysql
